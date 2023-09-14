@@ -6,6 +6,12 @@ function App() {
       <header>
         WMR.ORG
       </header>
+      <main>
+        body
+      </main>
+      <footer>
+        All right reserved!
+      </footer>
     </div>
   )
 }
