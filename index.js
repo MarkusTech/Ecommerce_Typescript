@@ -136,3 +136,9 @@ const isPrime = (n) => {
 console.log(isPrime(1)); // false
 console.log(isPrime(5)); // true
 console.log(isPrime(4)); // false
+
+/* -------------------------------------------------- */
+
+const wennworks = "wennmark";
+const reversed1 = wennworks.split("").reverse().join("");
+console.log(reversed1);
