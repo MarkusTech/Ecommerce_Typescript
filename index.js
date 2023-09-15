@@ -60,17 +60,17 @@ const reverseString = (str) => {
   const arr = str.split("");
   arr.reverse();
   str = arr.join("");
-  console.log(str);
+  console.log(`Reverse String: ${str}`);
 };
 
-reverseString(`Reverse String: ${name}`);
+reverseString(name);
 
 const reverseString1 = (str) => {
   let reversed = " ";
   for (let character of str) {
     reversed = character + reversed;
   }
-  console.log(reversed);
+  console.log(`Reverse String: ${reversed}`);
 };
 
-reverseString1(`Reverse String: ${name}`);
+reverseString1(name);
