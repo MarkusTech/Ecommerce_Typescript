@@ -142,3 +142,14 @@ console.log(isPrime(4)); // false
 const wennworks = "wennmark";
 const reversed1 = wennworks.split("").reverse().join("");
 console.log(reversed1);
+
+/* -------------------------------------------------- */
+
+const mergeArray = (first, second) => {
+  for (let i = 0; i < second.length; i++) {
+    first.push(second[i]);
+  }
+  console.log(`Merge Array: ${first}`);
+};
+
+mergeArray([1, 2, 3], [4, 5, 6]);
