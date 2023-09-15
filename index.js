@@ -63,7 +63,7 @@ const reverseString = (str) => {
   console.log(str);
 };
 
-reverseString(name);
+reverseString(`Reverse String: ${name}`);
 
 const reverseString1 = (str) => {
   let reversed = " ";
@@ -73,4 +73,4 @@ const reverseString1 = (str) => {
   console.log(reversed);
 };
 
-reverseString1(name);
+reverseString1(`Reverse String: ${name}`);
