@@ -74,3 +74,65 @@ const reverseString1 = (str) => {
 };
 
 reverseString1(name);
+
+/* -------------------------------------------------- */
+
+const fibanocci = (n) => {
+  const fib = [0, 1];
+  for (let i = 2; i < n; i++) {
+    fib[i] = fib[i - 1] + fib[i - 2];
+  }
+  console.log(`Fibanocci: ${fib}`);
+};
+
+fibanocci(5);
+
+/* -------------------------------------------------- */
+
+const factorial = (n) => {
+  let result = 1;
+  for (let i = 2; i <= n; i++) {
+    result = result * i;
+  }
+  console.log(`Factorial: ${result}`);
+};
+
+factorial(5);
+
+/* -------------------------------------------------- */
+
+const isPowerOfTwo = (n) => {
+  if (n < 1) {
+    return false;
+  }
+  while (n > 2) {
+    if (n % 2 !== 0) {
+      return false;
+    }
+  }
+  return true;
+};
+
+console.log(isPowerOfTwo(1));
+console.log(isPowerOfTwo(2));
+console.log(isPowerOfTwo(5));
+
+console.log(`--------------------------------------------------`);
+
+/* -------------------------------------------------- */
+
+const isPrime = (n) => {
+  if (n < 2) {
+    return false;
+  }
+  for (let i = 2; i < n; i++) {
+    if (n % 2 === 0) {
+      return false;
+    }
+  }
+  return true;
+};
+
+console.log(isPrime(1)); // false
+console.log(isPrime(5)); // true
+console.log(isPrime(4)); // false
