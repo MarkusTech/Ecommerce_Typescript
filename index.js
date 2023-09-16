@@ -155,10 +155,13 @@ const mergeArray = (first, second) => {
 mergeArray([1, 2, 3], [4, 5, 6]);
 
 /* -------------------------------------------------- */
+console.log(`--------------------------------------------------`);
 
 /* spread syntax */
 const spreadName = ["name", "name1", "name2"];
 console.log(...spreadName);
+
+console.log(`--------------------------------------------------`);
 
 /* for in */
 let names = "";
@@ -166,3 +169,10 @@ for (let name in spreadName) {
   names += spreadName[name];
 }
 console.log(names);
+
+console.log(`--------------------------------------------------`);
+
+/* for of */
+for (let x of spreadName) {
+  console.log(x);
+}
