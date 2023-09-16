@@ -141,7 +141,7 @@ console.log(isPrime(4)); // false
 
 const wennworks = "wennmark";
 const reversed1 = wennworks.split("").reverse().join("");
-console.log(reversed1);
+console.log(`Reverse: ${reversed1}`);
 
 /* -------------------------------------------------- */
 
