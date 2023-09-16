@@ -176,3 +176,21 @@ console.log(`--------------------------------------------------`);
 for (let x of spreadName) {
   console.log(x);
 }
+
+/* Object Oriented Programming */
+class Person {
+  constructor(firstName, middleName, lastName) {
+    this.firstName = firstName;
+    this.middleName = middleName;
+    this.lastName = lastName;
+  }
+  personFullName() {
+    console.log(
+      `My name is ${this.firstName} ${this.middleName} ${this.lastName}`
+    );
+  }
+}
+
+const person = new Person("Wenn Mark", "Cabaron", "Recopelacion");
+
+console.log(person.personFullName());
