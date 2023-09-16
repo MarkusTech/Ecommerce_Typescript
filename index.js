@@ -156,7 +156,7 @@ mergeArray([1, 2, 3], [4, 5, 6]);
 
 /* -------------------------------------------------- */
 
-/* dotdotdot syntax */
+/* spread syntax */
 const spreadName = ["name", "name1", "name2"];
 console.log(...spreadName);
 
