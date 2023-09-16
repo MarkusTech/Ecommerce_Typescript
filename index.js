@@ -185,12 +185,23 @@ class Person {
     this.lastName = lastName;
   }
   personFullName() {
-    console.log(
-      `My name is ${this.firstName} ${this.middleName} ${this.lastName}`
-    );
+    return `My name is ${this.firstName} ${this.middleName} ${this.lastName}`;
+  }
+}
+
+// inheritance
+class Student extends Person {
+  constructor(firstName, middleName, lastName, id) {
+    super(firstName, middleName, lastName);
+    this.id = id;
+  }
+  studentInfo() {
+    return `My name is ${this.firstName} ${this.middleName} ${this.lastName} and my id numbers is ${this.id}`;
   }
 }
 
 const person = new Person("Wenn Mark", "Cabaron", "Recopelacion");
+const student = new Student("Wenn Mark", "Cabaron", "Recopelacion", 123123123);
 
 console.log(person.personFullName());
+console.log(student.studentInfo());
