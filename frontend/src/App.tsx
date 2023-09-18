@@ -1,4 +1,5 @@
 import './App.css'
+import { sampleProducts } from './data';
 
 function App() {
   return (
@@ -7,7 +8,17 @@ function App() {
         WMR.ORG
       </header>
       <main>
-        body
+        <ul>
+          {
+            sampleProducts.map(product => (
+              <li key={product.slug}>
+                <img src={product.image} alt={product.name} className='product-image'/>
+                <h2>{product.name}</h2>
+                <p>PHP {product.price}</p>
+              </li>
+            ))
+          }
+        </ul>
       </main>
       <footer>
         All right reserved!
